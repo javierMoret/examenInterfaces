@@ -1,20 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 
     <!-- Completa tu nombre -->
     <title>JAVIER_MORET_GALAN</title>
 
 </head>
+
 <body>
 
     <!-- Completar html aqui -->
+    <div id="cuadro-principal">
+        <div class="container-principal">
+            <div class="container">
+                <div class="titulo">
+                    <p class="texto texto-titulo">Aplicación de dietas</p>
+                </div>
+                <div class="central">
+                    <div class="tabla">
+                        <table class="texto-tabla">
+                            <tr class="fila fila-titulo">
+                                <th>Nombre</th>
+                                <th>Sexo</th>
+                                <th>Edad</th>
+                                <th>Altura</th>
+                                <th>Peso</th>
+                                <th>Actividad</th>
+                                <th>IM Basal</th>
+                                <th>Calorias necesarias</th>
+                            </tr>
+                            <tr class="fila">
+                                <td>Javier Moret</td>
+                                <td><span class="etiqueta hombre">hombre</span></td>
+                                <td>19</td>
+                                <td>171</td>
+                                <td>67</td>
+                                <td><span class="etiqueta actividad">moderada</span></td>
+                                <td><span class="cifra">1366</span> kCal</td>
+                                <td><span class="cifra">1743</span> kCal</td>
+                            </tr>
+                            <tr class="fila">
+                                <td>Javier Moret</td>
+                                <td><span class="etiqueta hombre">hombre</span></td>
+                                <td>19</td>
+                                <td>171</td>
+                                <td>67</td>
+                                <td><span class="etiqueta actividad">moderada</span></td>
+                                <td><span class="cifra">1366</span> kCal</td>
+                                <td><span class="cifra">1743</span> kCal</td>
+                            </tr>
+                            <tr class="fila">
+                                <td>Javier Moret</td>
+                                <td><span class="etiqueta mujer">mujer</span></td>
+                                <td>19</td>
+                                <td>171</td>
+                                <td>67</td>
+                                <td><span class="etiqueta actividad">alta</span></td>
+                                <td><span class="cifra">1366</span> kCal</td>
+                                <td><span class="cifra">1743</span> kCal</td>
+                            </tr>
+                            <tr class="fila">
+                                <td>Javier Moret</td>
+                                <td><span class="etiqueta mujer">mujer</span></td>
+                                <td>19</td>
+                                <td>171</td>
+                                <td>67</td>
+                                <td><span class="etiqueta actividad">alta</span></td>
+                                <td><span class="cifra">1366</span> kCal</td>
+                                <td><span class="cifra">1743</span> kCal</td>
+                            </tr>
+                            <tr class="fila">
+                                <td>Javier Moret</td>
+                                <td><span class="etiqueta mujer">mujer</span></td>
+                                <td>19</td>
+                                <td>171</td>
+                                <td>67</td>
+                                <td><span class="etiqueta actividad">alta</span></td>
+                                <td><span class="cifra">1366</span> kCal</td>
+                                <td><span class="cifra">1743</span> kCal</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="boton">
+                        <button onclick="showModal();">Añadir cliente</button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p class="texto-footer">Javier Moret&#169;2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CUADRO MODAL -->
+
+    <div id="cuadro-modal">
+        <div class="container-principal">
+            <div class="container-modal">
+                <div class="titulo">
+                    <p class="texto texto-titulo">Nuevo Cliente</p>
+                </div>
+                <div class="central">
+                    <form>
+                        <div class="inputs">
+                            <div class="input">
+                                <label>Nombre: </label>
+                                <input type="text" required>
+                            </div>
+                            <div class="input">
+                                <label>Sexo: </label>
+                                <input type="radio" id="hombre" name="sexo" value="hombre" required>
+                                <label>Hombre</label>
+                                <input type="radio" id="mujer" name="sexo" value="mujer" required>
+                                <label>Mujer</label>
+                            </div>
+                            <div class="input">
+                                <label>Edad: </label>
+                                <input type="number" required>
+                            </div>
+                            <div class="input">
+                                <label>Altura (cm): </label>
+                                <input type="number" required>
+                            </div>
+                            <div class="input">
+                                <label>Peso (kg): </label>
+                                <input type="number" required>
+                            </div>
+                            <div class="input">
+                                <label>Actividad fisica: </label>
+                                <select name="actividad" required>
+                                    <option value="0">Elija una opción</option>
+                                    <option value="suave">Suave o sedentaria</option>
+                                    <option value="moderada" selected>Moderada</option>
+                                    <option value="alta">Alta</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer">
+                    <div class="botones-modal">
+                        <button class="boton" id="anadircliente">Añadir Nuevo</button>
+                        <button class="boton" onclick="closeModal()" id="volver">Volver Atrás</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <script src="static/app.js"></script>
 
 </body>
+
 </html>

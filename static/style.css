@@ -2,9 +2,160 @@
 
 
 :root{
-    --background-negro: #000
+    --background-negro: #000;
+    --fuente-titulos: 'Fredoka One', cursive;
 }
 
-body{
-    background: linear-gradient(45deg,#666,#EB9A25, #666) 
+.container-principal{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,#666,#EB9A25, #666);
+    display: flex;
+}
+
+.container{
+    margin: auto;
+    background-color: #DDDDDD;
+    width: 50%;
+    height: 48vh;
+    border: 2px solid black;
+    box-shadow: 2px -2px #444;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.titulo{
+    flex: 1;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.texto-titulo{
+    /* Le he aumentado de 16px a 18px para que sea más fiel a la imagen */
+    font-size: 20px;
+    font-family: var(--fuente-titulos);
+}
+.texto-footer{
+    /* Le he aumentado de 16px a 18px para que sea más fiel a la imagen */
+    font-size: 16px;
+    font-family: var(--fuente-titulos);
+}
+.central{
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFF;
+}
+.footer{
+    flex: 1;
+    text-align: center;
+    border-top: 2px solid black;
+}
+.tabla{
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.texto-tabla th{
+    font-size: 16px;
+    font-family: var(--fuente-titulos);
+}
+table{
+    border: #EB9A25 1px solid;
+    border-collapse: collapse;
+    border-spacing: 30px;
+    background-color: #FFF;
+
+}
+table th{
+    height: 20px;
+}
+table td{
+    width: 100px;
+    height: 40px;
+}
+table tr:hover td{
+    background-color: rgba(239,156,1,0.8);
+}
+tr,td{
+    border: #EB9A25 1px solid;
+
+}
+.fila-titulo{
+    background-color: #EB9A25;
+}
+.boton{
+    display: flex;
+    margin-bottom: 2%;
+    margin-top: 1%;
+
+}
+.boton button:hover{
+    cursor: pointer;
+}
+.boton button{
+    margin: auto;
+    padding: 1% 4%;
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+}
+.etiqueta{
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+.hombre{
+    background-color: blue;
+}
+.mujer{
+    background-color: pink;
+}
+.actividad{
+    background-color: darkgray;
+}
+.cifra{
+    font-size: 22px;
+}
+ #cuadro-modal{
+    display: none;
+}
+
+.container-modal{
+    margin: auto;
+    background-color: #DDDDDD;
+    width: 30%;
+    height: 40vh;
+    border: 2px solid black;
+    box-shadow: 2px -2px #444;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.botones-modal{
+    display: flex;
+    justify-content: center;
+}
+.botones-modal button{
+    margin: 2% 3%;
+    padding: 2% 5%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#anadircliente{
+    background-color: green;
+}
+#volver{
+    background-color: gray;
+}
+form{
+    margin: auto;
+}
+.input{
+    margin-bottom: 5%;
 }
