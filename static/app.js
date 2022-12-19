@@ -11,6 +11,9 @@ function showModal() {
     document.getElementById('cuadro-principal').style.display = 'block';
   }
 
+  // enviar datos
 
-//
-// Completar JS aqui
+
+    function enviarForm(){
+        alert('El formulario ha sido enviado con éxito')
+    }
