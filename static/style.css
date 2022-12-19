@@ -1,0 +1,10 @@
+/*# sourceMappingURL=style.css.map */
+
+
+:root{
+    --background-negro: #000
+}
+
+body{
+    background: linear-gradient(45deg,#666,#EB9A25, #666) 
+}
