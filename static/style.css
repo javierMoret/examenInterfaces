@@ -159,4 +159,6 @@ form{
 }
 .input{
     margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
 }
